@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlpenGlow Resort | Contact</title>
+    <meta name="author" content="Drew Galbraith">
+    <meta name="description" content="Get in touch with AlpenGlow Resort to plan your perfect alpine escape. Reach out for booking inquiries, directions, or general information about your stay.">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html" aria-label="Go to the AlpenGlow Resort home page">AlpenGlow Resort</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact-main">
+
+        <h2>Contact Us</h2>
+
+        <div id="contact-info">
+            <p>
+                Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+                <strong>Required fields marked with a *</strong>
+            </p>
+            <figure>
+                <img src="images/swiss-peak.jpg" alt="Panoramic view of the Swiss Alps peak under clear blue sky">
+            </figure>
+        </div>
+
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+            <label for="full-name">Full Name *</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <fieldset>
+                <legend>Preferred Contact Method *</legend>
+                <label>
+                    <input type="radio" name="contact-method" value="email" required tabindex="0">
+                    Email
+                </label>
+                <label>
+                    <input type="radio" name="contact-method" value="phone" required tabindex="0">
+                    Phone
+                </label>
+            </fieldset>
+
+            <label for="comments">Comments *</label>
+            <textarea id="comments" name="comments" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AlpenGlow Resort.</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>
